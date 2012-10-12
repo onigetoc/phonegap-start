@@ -436,8 +436,7 @@ $('#youtube').bind('pageAnimationEnd', function(e, info) {
 <div id="home" class="current">
                 <div class="toolbar">
                     <h1>iTabbar</h1>
-                    <a class="button slideup" id="infoButton" href="#about">About</a>
-                </div>
+                    <a class="button slideup" id="infoButton" href="#about">About</a>                </div>
                 
                 <div id="wrapper">
                 <div class="scroller">
@@ -446,7 +445,6 @@ $('#youtube').bind('pageAnimationEnd', function(e, info) {
                         <li class="arrow"><a href="#twitterlist">Twitter Users list<small class="counter">7</small></a></li>
                         <li class="arrow"><a href="#flickrlist">Flickr Photos<small class="counter">10</small></a></li>
                         <li class="arrow"><a href="#youtubelist">Youtube Videos<small class="counter">4</small></a></li>
-
                     </ul>
                     <h2>External Links</h2>
                     <ul class="rounded">
@@ -463,7 +461,6 @@ $('#youtube').bind('pageAnimationEnd', function(e, info) {
                     </div>
                 </div>
                 </div>
-
   </div>
 <!-- End #home -->
     
@@ -471,8 +468,7 @@ $('#youtube').bind('pageAnimationEnd', function(e, info) {
 	<div id="single" class="">
 		<div class="toolbar">
 			<h1>item section</h1>
-            <a class="back" href="#">Back</a>		
-        </div>
+            <a class="back" href="#">Back</a>        </div>
 		<div id="wrapper">
 			<div id="scroller">
             <ul class="rounded_content">
@@ -633,14 +629,12 @@ $('#youtube').bind('pageAnimationEnd', function(e, info) {
    <form id="search"  class="form">
 		<div class="toolbar">
 			<h1>Search</h1>
-			 <a class="cancel" href="#">Cancel</a>
-        </div>
+			 <a class="cancel" href="#">Cancel</a>        </div>
 		<div class="scroll">
                     <ul class="rounded">
                         <li><input type="search" id="searchid" name="s" value="" placeholder="Search" /></li>
                     </ul>
-                    <a style="margin-top: 10px; margin-bottom: 10px; color:rgba(0,0,0,.9)" href="#rssfeed" id="submit" class="whiteButton">Submit</a>
-                </div>
+                    <a style="margin-top: 10px; margin-bottom: 10px; color:rgba(0,0,0,.9)" href="#rssfeed" id="submit" class="whiteButton">Submit</a>                </div>
     </form>
 <!-- End #search -->
     
@@ -648,14 +642,12 @@ $('#youtube').bind('pageAnimationEnd', function(e, info) {
    <form id="search1" action="ajax_get.php" method="GET" class="form">
 		<div class="toolbar">
 			<h1>Search</h1>
-			 <a class="cancel" href="#">Cancel</a>
-        </div>
+			 <a class="cancel" href="#">Cancel</a>        </div>
 		<div class="scroll">
                     <ul class="rounded">
                         <li><input type="text" name="s" value="" placeholder="Search" /></li>
                     </ul>
-                    <a style="margin-top: 10px; margin-bottom: 10px; color:rgba(0,0,0,.9)" href="#" class="submit whiteButton">Submit</a>
-                </div>
+                    <a style="margin-top: 10px; margin-bottom: 10px; color:rgba(0,0,0,.9)" href="#" class="submit whiteButton">Submit</a>                </div>
     </form>
 <!-- End #search ori-->
     
@@ -670,8 +662,8 @@ $('#youtube').bind('pageAnimationEnd', function(e, info) {
 		<p><br><br><a href="#" class="grayButton goback">Close</a></p>
 	</div>
     <!-- End #about -->
-
-</div> <!-- End #jqt -->
+</div> 
+<!-- End #jqt -->
 
 <nav id="tabbar">
     <ul >
@@ -750,6 +742,10 @@ document.getElementById('singleappend').innerHTML=t;
 </script>
 
 <script type='text/javascript' src='src/itabbar.js'></script> 
-
+        <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
 </body>
 </html>
